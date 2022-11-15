@@ -32,7 +32,7 @@ function CreatePost({ isAuth }) {
                 <div className="inputGp">
                     <label> Title:</label>
                     <input
-                        placeholder="Title..."
+                        placeholder="What are you thinking..."
                         onChange={(event) => {
                             setTitle(event.target.value);
                         }}
@@ -41,7 +41,7 @@ function CreatePost({ isAuth }) {
                 <div className="inputGp">
                     <label> Post:</label>
                     <textarea
-                        placeholder="Post..."
+                        placeholder="Write something intresting..."
                         onChange={(event) => {
                             setPostText(event.target.value);
                         }}
