@@ -30,7 +30,7 @@ function Home({ isAuth }) {
           <input
             onChange={(e) => setSearch(e.target.value)}
             type='text'
-            placeholder='Search for any title'
+            placeholder='Search for any user...'
           />
         </div>
       )}
