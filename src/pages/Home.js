@@ -4,14 +4,14 @@ import { auth, db } from '../firebase-config'
 
 function Home({ isAuth }) {
   const [search, setSearch] = useState('')
+  const [toggle, setToggle] = useState(true)
   const [postLists, setPostList] = useState([])
   const postsCollectionRef = collection(db, 'posts')
-
-  console.log(postLists)
 
   const deletePost = async (id) => {
     const postDoc = doc(db, 'posts', id)
     await deleteDoc(postDoc)
+    setToggle(!toggle)
   }
 
   const getPosts = async () => {
