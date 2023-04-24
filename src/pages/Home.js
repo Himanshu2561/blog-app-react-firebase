@@ -12,6 +12,7 @@ function Home({ isAuth }) {
     const postDoc = doc(db, 'posts', id)
     await deleteDoc(postDoc)
     setToggle(!toggle)
+    window.location.reload()
   }
 
   const getPosts = async () => {
